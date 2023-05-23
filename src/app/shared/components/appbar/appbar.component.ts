@@ -1,5 +1,5 @@
 import {  Component, OnInit} from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-appbar',
   templateUrl: './appbar.component.html',
@@ -8,7 +8,7 @@ import {  Component, OnInit} from '@angular/core';
 export class AppbarComponent implements OnInit{
 
 
-    constructor(){
+    constructor(private router: Router){
     }
 
     
@@ -27,6 +27,8 @@ export class AppbarComponent implements OnInit{
     //   }
     // })
   }
-
+  viewCart(): void {
+      this.router.navigate(['/cart/view'])
+  }
   }
 

@@ -7,6 +7,7 @@ import { MatButtonModule }from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatSidenavModule }from '@angular/material/sidenav';
 import { ProductModule } from 'src/app/features/product/product.module';
+import { MatDialogModule } from '@angular/material/dialog';
 @NgModule({
   declarations: [],
   imports: [
@@ -16,6 +17,7 @@ import { ProductModule } from 'src/app/features/product/product.module';
     MatButtonModule,
     MatSidenavModule,
     MatDividerModule,
+    MatDialogModule
    
   ],
   exports: [
@@ -24,6 +26,7 @@ import { ProductModule } from 'src/app/features/product/product.module';
     MatButtonModule,
     MatSidenavModule,
     MatDividerModule,
+    MatDialogModule
   ]
 })
 export class MaterialModule { }

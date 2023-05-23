@@ -1,0 +1,31 @@
+.scroll-image{
+ display: none;
+}
+.test{
+    display: flex;
+    flex-direction: column;
+}
+.img-lg-view{
+  
+}
+.img-side-desc{
+  //margin: auto;  
+}
+@media(min-width: 768px){
+    .scroll-image {
+       display: block;
+       width: 5%;
+    }
+    .test{
+        display: flex;
+        flex-direction: row;
+    }
+    .img-side-desc{
+        width: 30%;
+        border-top: 1px solid black;
+    }
+    .img-lg-view{
+        width: 40%
+    }
+}
+

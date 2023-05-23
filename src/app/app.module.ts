@@ -9,6 +9,7 @@ import { SharedModule } from './shared/modules/shared.module';
 //import { ProdutCardComponent } from './features/product/produt-card/produt-card.component';
 //mport { ProductListingComponent } from './features/product/product-listing/product-listing.component';
 import { TestComponent } from './test/test.component';
+import { CartModule } from './features/cart/cart.module';
 // import { AppComponent } from './sharedcomponent/appbar.component';
  //import { ProductListingComponent } from './features/product/product-listing.component';
  import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -18,6 +19,7 @@ import { TestComponent } from './test/test.component';
 // import { ProdutCardComponent } from './components/product/produt-card/produt-card.component';
 // import { ViewCartComponent } from './cart/view-cart/view-cart.component'; 
 // import { MaterialModule } from './sharedcomponent/material';
+import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
      AppComponent,
@@ -33,11 +35,13 @@ import { TestComponent } from './test/test.component';
   ],
   imports: [
        BrowserModule,
-    // AppRoutingModule,
+       AppRoutingModule,
+       RouterModule,
        BrowserAnimationsModule,
        MaterialModule,
        ProductModule,
-       SharedModule  
+       SharedModule ,
+       CartModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
